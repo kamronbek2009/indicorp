@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+:root {
+	--text-color: #252B42;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+svg {
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  background: #fafafa;
+  color: var(--text-color);
+  height: 100%;
+}
+
+
+/* -----WRAPPER-------------------------------------------------------------------------------------- */
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	overflow: hidden;
+}
+/* -----WRAPPER-------------------------------------------------------------------------------------- */
+
+
+
+/* ----GLOBALS------------------------------------------------------------------------------------- */
+.container {
+	max-width: 1046px;
+	margin-inline: auto;
+	margin: 0 auto;
+	padding: 0 16px;
+	box-sizing: content-box;
+}
+/* ----GLOBALS------------------------------------------------------------------------------------- */
+
+
+
+/* ------HEADER START--------------------------------------------------------------------------------- */
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	min-height: 104px;
+}
+
+.header__logo {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: calc(32 / 24 * 100%);
+	color: inherit;
+}
+
+.logo {
+}
+
+.header__menu {
+	margin: 0 0 0 133px;
+}
+
+.menu {
+	padding: 5px 0;
+}
+
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 21px;
+}
+
+.menu__link {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: calc(24 / 14 * 100%);
+	letter-spacing: 0.2px;
+	color: #737373;
+	transition: 0.3s ease-in;
+}
+
+.menu__link:hover {
+	color: #FFA62B;
+	
+}
+/* ------HEADER END------------------------------------------------------------------------------------- */
+
+
+
+/* ------PAGES START------------------------------------------------------------------------------------- */
+
+.page {
+	flex: 1 1 auto;
+}
+
+.page__main_block {
+
+}
+
+
+/* ------PAGES END------------------------------------------------------------------------------------- */
+
+
+
+/* ------HEADER BLOCK START--------------------------------------------------------------------------- */
+
+/* ------HEADER BLOCK END----------------------------------------------------------------------------- */
+
+
+
+/* ------MAIN BLOCK START----------------------------------------------------------------------------- */
+.page__main {
+}
+.main-block {
+	position: relative;
+}
+.main-block__container {
+	position: relative;
+	z-index: 10;
+}
+
+.main-block__body {
+	width: clamp(45ch, 50%, 75ch);
+	padding: 184px 0 191px 0;
+	position: relative;
+	z-index: 2;
+}
+
+
+@media (max-width:930px) {
+	.main-block__body {
+		padding: 120px 0 191px 0;
+	}
+}
+
+
+@media (max-width:479px) {
+	.main-block__body {
+		padding: 115px 0 160px 0;
+	}
+}
+
+.main-block__body > *:not(:last-child) {
+	margin-bottom: 35px;
+}
+
+.main-block__title {
+	font-size: clamp(2rem, 10vh, 3.5rem);
+	font-weight: 800;
+	line-height: calc(80 / 58 * 100%);
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+}
+
+/* @media (max-width:479px) {
+	.main-block__title {
+		font-size: 42px;
+	}
+} */
+
+.main-block__text {
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	line-height: calc(30 / 20 * 100%);
+	color: #737373;
+}
+
+.main-block__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px 0;
+}
+
+.main-block__button {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: calc(28 / 14 * 100%);
+	border-radius: 37px;
+	min-height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	letter-spacing: 0.2px;
+	padding: 10px 35px;
+	margin: 10px 0;
+}
+
+@media (max-width: 479px;) {
+	.main-block__button {
+		flex: 1 1 100%;
+	}
+}
+
+@media (min-width: 479px) {
+	.main-block__button:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+
+.main-block__button--orange {
+	background: #FFA62B;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+.main-block__button--orange:hover {
+	background: transparent;
+	color: #FFA62B;
+	border: 1px solid #FFA62B;
+	transition: 0.3s ease-in;
+}
+
+.main-block__button--border {
+	border: 1px solid #00A0C1;
+	color: #00A0C1;
+	transition: 0.3s ease-in;
+}
+
+.main-block__button--border:hover {
+	background-color: #00A0C1;
+	color: #fff;
+}
+
+.main-block__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/background.jpg) no-repeat center / cover;
+}
+
+@media (max-width: 1000px) {
+	.main-block__image {
+		background-position: right;
+	}
+}
+
+/* ------MAIN BLOCK END----------------------------------------------------------------------------- */
+
+
+
+/* ------SERVICES START------------------------------------------------------------------------------ */
+.page__services {
+	margin: -111px 0 0 0;
+	position: relative;
+	z-index: 50;
+}
+.services {
+}
+.services__container {
+}
+
+.services__body {
+}
+
+@media (min-width: 670px) {
+	.services__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+}
+.services__column {
+	flex: 0 1 33.333%;
+}
+
+@media (min-width: 670px) {
+	.services__column {
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.services__column {
+		flex: 0 1 50%;
+	}
+	.services__column:not(:last-child) {
+		margin: 0 0 30px 0;
+	}
+	.services__column:last-child {
+		flex: 0 1 100%;
+	}
+}
+
+.services__item {
+	height: 100%;
+	background-color: #fff;
+	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+	padding: 35px 40px;
+	transition: 0.3s ease-in;
+	cursor: pointer;
+}
+
+.services__item > *:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+
+@media (max-width: 470px) {
+	.services__item {
+		padding: 25px;
+	}
+}
+
+.item-service__icon svg {
+	fill: #00A0C1;
+}
+
+.item-service__title {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: calc(32 / 22 * 100%);
+	letter-spacing: 0.1px;
+	transition: 0.3s ease-in;
+}
+
+.item-service__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(20 / 14 * 100%);
+	color: #737373;
+	letter-spacing: 0.2px;
+	transition: 0.3s ease-in;
+}
+
+.services__item:hover {
+	transform: scale(1.02);
+	transition: 0.3s ease-in;
+}
+
+.item-service:hover {
+	background-color: #00A0C1;
+	transition: 0.3s ease-in;
+}
+
+
+.item-service:hover .item-service__icon svg {
+	fill: #fff;
+	transition: 0.3s ease-in;
+}
+
+.item-service:hover .item-service__title, .item-service:hover .item-service__text {
+	color: #fff;
+	transition: 0.3s ease-in;
+}
+
+/* ------SERVICES END--------------------------------------------------------------------------------- */
+
+
+
+/* ------EXPERIENCES START---------------------------------------------------------------------------- */
+
+/* ------EXPERIENCES END---------------------------------------------------------------------------- */
+
+
+
+/* ------PRACTICE START---------------------------------------------------------------------------- */
+
+/* ------PRACTICE END---------------------------------------------------------------------------- */
+
+
+
+/* ------WHO WE ARE START------------------------------------------------------------------------ */
+
+/* ------WHO WE ARE END-------------------------------------------------------------------------- */
+
+
+
+/* ------CLIENTS START--------------------------------------------------------------------------- */
+
+/* ------CLIENTS END----------------------------------------------------------------------------- */
+
+
+
+/* ------SUBSCRIBE START------------------------------------------------------------------------- */
+
+/* ------SUBSCRIBE END--------------------------------------------------------------------------- */
+
+
+
+/* ------GET IN TOUCH START---------------------------------------------------------------------- */
+
+/* ------GET IN TOUCH END------------------------------------------------------------------------ */
+
+
+
+/* ------CONTACT US START------------------------------------------------------------------------ */
+
+/* ------CONTACT US END------------------------------------------------------------------------ */
+
+
+
+/* ------FOOTER START---------------------------------------------------------------------------- */
+
+/* ------FOOTER END------------------------------------------------------------------------------ */
