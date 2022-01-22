@@ -401,12 +401,186 @@ body {
 
 
 /* ------EXPERIENCES START---------------------------------------------------------------------------- */
+.page__experiences {
+}
+.experiences {
+	padding: 80px 0;
+}
 
+@media (max-width: 992px) {
+	.experiences {
+		padding: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	.experiences {
+		padding: 50px;
+	}
+}
+
+.experiences__container{
+}
+
+.experiences__header {
+	margin-bottom: 50px;
+}
+.title-block {
+	text-align: center;
+}
+.title-block__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: calc(57 / 40 * 100%);
+	letter-spacing: 0.2px;
+	color: #252B42;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+
+}
+.title-block__title-uppercase {
+}
+.title-block__subtitle {
+	max-width: 511px;
+	width: 100%;
+	margin: 0 auto;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(20 / 14 * 100%);
+}
+.experiences__body {
+	display:flex;
+	flex-wrap: wrap;
+	margin: 0 -15px -30px;
+
+}
+.experiences__column {
+	background-color: #fff;
+	padding: 0 15px;
+	margin: 0 0 30px 0;
+	flex: 0 1 25%;
+}
+
+@media (max-width: 1034px) {
+	.experiences__column {
+		flex: 0 1 100%;
+
+	}
+}
+
+.experiences__item {
+	padding: 30px;
+	background-color: #fff;
+	text-align: center;
+	height: 100%;
+	cursor: pointer;
+	box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+	transition: 0.3s ease-in;
+	
+}
+
+.experiences__item:hover{
+	transform: scale(1.04)
+}
+
+.experiences__item > :not(:last-child) {
+	margin: 0 0 10px 0;
+}
+
+.experiences__icon {
+	height: 48px;
+}
+.experiences__value {
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	line-height: calc(57 / 40 * 100%);
+}
+.experiences__text {
+	font-size: 16px;
+	line-height: calc(24 / 16 * 100%);
+	font-weight: 700;
+	letter-spacing: 0.1px;
+	color: #737373;
+}
 /* ------EXPERIENCES END---------------------------------------------------------------------------- */
 
 
 
 /* ------PRACTICE START---------------------------------------------------------------------------- */
+.page__practice {
+}
+.practice {
+  padding: 125px 0 80px 0;
+
+}
+@media(max-weidth: 767px){
+	.practice{
+
+	}
+}
+.practice__container {
+}
+
+.practice__header {
+  margin-bottom: 45px;
+}
+.practice__body {
+  margin: 0 -20px -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.practice__column {
+  padding: 0 20px;
+  margin: 0 0 30px 0;
+  flex: 0 1 25%;
+}
+
+@media (max-width: 1034px) {
+  .practice__column {
+    flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 630px) {
+  .practice__column {
+    flex: 0 1 100%;
+  }
+}
+.practice__item {
+  box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+}
+.item-practice {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.item-practice__content {
+	padding: 30px;
+	flex: 1 1 auto;
+}
+.item-practice__link {
+	color: inherit;
+	display: inline-block;
+	
+}
+
+.item-practice__link:hover {
+	text-decoration: underline;
+}
+.item-practice__title {
+font-weight: 700;
+font-size:16px; 
+line-height:calc(24 / 16 * 100%) ;
+letter
+}
+.item-practice__text {
+}
+.item-practice__image {
+}
+._img {
+}
 
 /* ------PRACTICE END---------------------------------------------------------------------------- */
 
